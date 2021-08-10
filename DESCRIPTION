@@ -1,0 +1,16 @@
+Package: RLoadPmml
+Title: What the Package Does (One Line, Title Case)
+Version: 0.1.0
+Authors@R: 
+    c(
+    person("Xianglin", "Zhang", email = "2280217841@qq.com", role = "cre"),
+    person("Xianglin", "Zhang", email = "2280217841@qq.com", role = "aut"))
+Description: Use R language to load pmml files for prediction through python's pypmml interface.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: reticulate,data.table
+Depends: 
+    R (>= 3.10)
