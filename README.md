@@ -2,7 +2,7 @@
 
 install.packages('devtools')
 
-devtools::install_github('https://github.com/xianglinZ/RLoadPmml',force = TRUE)
+devtools::install_github("https://github.com/xianglinZ/RLoadPmml", force = TRUE)
 
 library(RLoadPmml)
 
