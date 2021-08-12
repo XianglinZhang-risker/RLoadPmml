@@ -9,11 +9,24 @@ library(RLoadPmml)
 pmmlFcLoad()
 
 # By one row data.frame or one row data.table
+
+## pmmlfile
+
 testDF <- modelPredict(pmmlfile = 'fit_pmml.pmml',data = data.frame('Sepal.Length' = 1,'Sepal.Width' = 1,'Petal.Length' = 1,'Petal.Width' = 1))
 
 testDF
 
 testDT <- modelPredict(pmmlfile = 'fit_pmml.pmml',data = data.table('Sepal.Length' = 1,'Sepal.Width' = 1,'Petal.Length' = 1,'Petal.Width' = 1))
+
+testDT
+
+## model
+
+testDF <- modelPredict(model = modelLoad('fit_pmml.pmml'),data = data.frame('Sepal.Length' = 1,'Sepal.Width' = 1,'Petal.Length' = 1,'Petal.Width' = 1))
+
+testDF
+
+testDT <- modelPredict(model = modelLoad('fit_pmml.pmml'),data = data.table('Sepal.Length' = 1,'Sepal.Width' = 1,'Petal.Length' = 1,'Petal.Width' = 1))
 
 testDT
 
